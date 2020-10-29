@@ -1,0 +1,19 @@
+{
+  "name": "henta-plugin-common-nicknames",
+  "version": "0.2.0",
+  "description": "Nicknames system",
+  "main": "src/index.js",
+  "keywords": [],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "release-it": "yarn version --patch && git push --follow-tags"
+  },
+  "author": "TheEVolk",
+  "license": "ISC",
+  "dependencies": {
+    "sequelize": "^6.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.0"
+  }
+}
