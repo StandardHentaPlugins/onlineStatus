@@ -1,7 +1,7 @@
-#HENTA плагин: common/nicknames [![Build Status](https://travis-ci.com/StandardHentaPlugins/nicknames.svg?branch=master)](https://travis-ci.com/StandardHentaPlugins/nicknames)
+#HENTA плагин: common/onlineStatus [![Build Status](https://travis-ci.com/StandardHentaPlugins/onlineStatus.svg?branch=master)](https://travis-ci.com/StandardHentaPlugins/onlineStatus)
 
-Простая система никнеймов в боте.
+Простой плагин, включающий статус онлайна в паблике.
 
 ```js
-  const nicknamesPlugin = henta.getPlugin('common/nicknames');
+  const onlineStatusPlugin = henta.getPlugin('common/onlineStatus');
 ```

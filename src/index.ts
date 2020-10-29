@@ -1,16 +1,12 @@
-import * as Sequelize from 'sequelize';
-
-export default class NicknamesPlugin {
+export default class OnlineStatusPlugin {
   init (henta) {
-    const usersPlugin = henta.getPlugin('common/users');
-    usersPlugin.field('nickName', {
-      type: Sequelize.STRING,
-      allowNull: false,
-      defaultValue: ''
-    });
+    setInterval(() => this.enableOnline(henta), 900e3);
+  }
 
-    usersPlugin.on('create', (user) => {
-      user.nickName = user.firstName
-    });
+  async enableOnline (henta) {
+      henta.log(`Включаю онлайн сообщества...`);
+    try {
+      await henta.vk.api.groups.enableOnline({ group_id: henta.groupId });
+    } catch(e) {}
   }
 }
