@@ -2,7 +2,7 @@
   "name": "henta-plugin-common-nicknames",
   "version": "0.2.3",
   "description": "Nicknames system",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "keywords": [],
   "scripts": {
     "build": "tsc --project tsconfig.json",
