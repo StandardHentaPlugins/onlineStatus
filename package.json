@@ -1,6 +1,6 @@
 {
   "name": "henta-plugin-common-nicknames",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Nicknames system",
   "main": "src/index.js",
   "keywords": [],
