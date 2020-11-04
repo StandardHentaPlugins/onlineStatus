@@ -3,6 +3,7 @@
   "version": "0.2.4",
   "description": "Nicknames system",
   "main": "lib/index.js",
+  "type": "module",
   "keywords": [],
   "scripts": {
     "build": "tsc --project tsconfig.json",
